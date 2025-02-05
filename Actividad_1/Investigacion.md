@@ -17,10 +17,10 @@
 
 5. **Buses de datos y de dirección**:
 
-    - **Bus de datos**: Es un sistema digital que transfiere datos entre los componentes de un computador o entre computadores. 
+    - **Bus de datos**: Transporta los datos que se están procesando o transfiriendo. Es bidireccional, lo que significa que puede enviar y recibir datos entre la CPU, la memoria y los dispositivos de entrada/salida. El ancho del bus de datos, es decir, la cantidad de bits que puede transferir simultáneamente, influye directamente en el rendimiento del sistema.
 
 
-    - **Bus de dirección**: Es un sistema digital que transfiere datos entre los componentes de un computador o entre computadores. 
+    - **Bus de dirección**: Transporta las direcciones de memoria que indican la ubicación de los datos que se desean leer o escribir. Es unidireccional, ya que la CPU envía las direcciones a la memoria o a los dispositivos de entrada/salida. El ancho del bus de direcciones determina la cantidad máxima de memoria que el sistema puede direccionar. 
 
 
 6. **Memoria RAM y memoria ROM**:
