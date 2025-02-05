@@ -1,7 +1,5 @@
 # Investigacion   
 
-![image 1](image.png)
-
 1. **CPU (Unidad Central de Procesamiento)**: Es el componente principal de un sistema informático encargado de interpretar y ejecutar instrucciones. Actúa como el "cerebro" del ordenador, gestionando y coordinando las operaciones de todos los demás componentes. La CPU consta de varias unidades funcionales, incluyendo la Unidad Aritmético-Lógica (ALU), la Unidad de Control y los registros internos.  
 
 2. **ALU (Unidad Aritmético-Lógica)**: Es una subunidad de la CPU responsable de realizar operaciones aritméticas (como suma, resta, multiplicación) y lógicas (como AND, OR, NOT). La ALU toma los datos de los registros, ejecuta las operaciones requeridas y devuelve los resultados para su almacenamiento o uso posterior.   
@@ -34,3 +32,5 @@
    Ambos términos siguen siendo vigentes en la arquitectura de computadores actual, aunque las tecnologías subyacentes han evolucionado con el tiempo.
 
 7. **Opcode**: Es la parte de una instrucción de máquina que especifica la operación a realizar. Cada instrucción en lenguaje de máquina se compone de un opcode que indica a la CPU qué operación debe ejecutar, como una suma, una carga de datos o una comparación.
+
+[def]: https://www.google.com/imgres?q=arquitectura%20del%20computador&imgurl=https%3A%2F%2Fwww.yarquitectura.com%2Fwp-content%2Fuploads%2F2023%2F06%2Fque-es-arquitectura-de-computadoras.jpg&imgrefurl=https%3A%2F%2Fwww.yarquitectura.com%2Fque-es-arquitectura-de-computadoras%2F&docid=retGw4RGJOxKgM&tbnid=_plSPv61Dt5dzM&vet=12ahUKEwiXkcalwa2LAxUGRzABHY8XMv8QM3oECBYQAA..i&w=1920&h=931&hcb=2&ved=2ahUKEwiXkcalwa2LAxUGRzABHY8XMv8QM3oECBYQAA
