@@ -33,4 +33,3 @@
 
 7. **Opcode**: Es la parte de una instrucción de máquina que especifica la operación a realizar. Cada instrucción en lenguaje de máquina se compone de un opcode que indica a la CPU qué operación debe ejecutar, como una suma, una carga de datos o una comparación.
 
-[def]: https://www.google.com/imgres?q=arquitectura%20del%20computador&imgurl=https%3A%2F%2Fwww.yarquitectura.com%2Fwp-content%2Fuploads%2F2023%2F06%2Fque-es-arquitectura-de-computadoras.jpg&imgrefurl=https%3A%2F%2Fwww.yarquitectura.com%2Fque-es-arquitectura-de-computadoras%2F&docid=retGw4RGJOxKgM&tbnid=_plSPv61Dt5dzM&vet=12ahUKEwiXkcalwa2LAxUGRzABHY8XMv8QM3oECBYQAA..i&w=1920&h=931&hcb=2&ved=2ahUKEwiXkcalwa2LAxUGRzABHY8XMv8QM3oECBYQAA
