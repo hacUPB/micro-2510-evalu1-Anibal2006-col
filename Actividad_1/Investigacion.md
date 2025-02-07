@@ -1,5 +1,5 @@
 # Investigacion   
-
+![Componentes](images/image.png)
 1. **CPU (Unidad Central de Procesamiento)**: Es el componente principal de un sistema informático encargado de interpretar y ejecutar instrucciones. Actúa como el "cerebro" del ordenador, gestionando y coordinando las operaciones de todos los demás componentes. La CPU consta de varias unidades funcionales, incluyendo la Unidad Aritmético-Lógica (ALU), la Unidad de Control y los registros internos.  
 
 2. **ALU (Unidad Aritmético-Lógica)**: Es una subunidad de la CPU responsable de realizar operaciones aritméticas (como suma, resta, multiplicación) y lógicas (como AND, OR, NOT). La ALU toma los datos de los registros, ejecuta las operaciones requeridas y devuelve los resultados para su almacenamiento o uso posterior.   
@@ -31,5 +31,51 @@
 
    Ambos términos siguen siendo vigentes en la arquitectura de computadores actual, aunque las tecnologías subyacentes han evolucionado con el tiempo.
 
-7. **Opcode**: Es la parte de una instrucción de máquina que especifica la operación a realizar. Cada instrucción en lenguaje de máquina se compone de un opcode que indica a la CPU qué operación debe ejecutar, como una suma, una carga de datos o una comparación.
+7. **Opcode**: Es la parte de una instrucción de máquina que especifica la operación a realizar. Cada instrucción en lenguaje de máquina se compone de un opcode que indica a la CPU qué operación debe ejecutar, como una suma, una carga de datos o una comparación.  
+
+
+# Ejercicio 2: simulación   
+![simulacion](images/simulacion.png)
+ 
+ 1. **Componentes principales y su función**
+
+    - **ROM**: Se encarga de almacenar el código con las  instrucciones del programa.
+
+    - **RAM**:Es una memoria de lectura y escritura que almacena datos temporales mientras el programa está en ejecución. En este sistema, se utiliza para registrar la información proveniente del teclado y para almacenar los valores que determinan la imagen en la pantalla. Como la CPU puede modificar su contenido en tiempo real, la RAM es clave para la interacción del usuario con el programa.
+
+    - **CPU**: Es el núcleo del sistema y se encarga de ejecutar las instrucciones almacenadas en la ROM. A partir de cada instrucción, la CPU puede realizar diversas tareas, como operar con datos, gestionar la memoria o controlar dispositivos de entrada y salida.
+
+    - **Teclado**: Está conectado a la memoria y funciona como un conjunto de entradas digitales que la CPU puede leer. Cada tecla representa un valor específico en la memoria, y cuando el usuario la presiona, la CPU detecta el cambio y ejecuta instrucciones que pueden modificar la pantalla o realizar otras operaciones dentro del sistema.
+
+    - **Pantalla**: Refleja los valores almacenados en la memoria, lo que significa que cualquier cambio en la RAM afecta directamente la imagen mostrada. En este caso, el programa está diseñado para oscurecer progresivamente la pantalla cuando se mantiene presionada una tecla, lo que implica que la CPU está escribiendo valores en la memoria que corresponden a un estado más oscuro de la imagen.
+
+2. **Flujo de Ejecución del Programa**
+
+    - **Inicio y Reset**: Cuando el sistema se enciende o se presiona el botón de reset, la CPU comienza a ejecutar el programa desde la ROM. En este punto, se inicializan los registros internos, el contador de programa y la memoria RAM, asegurando que el sistema arranque en un estado definido. La CPU carga la primera instrucción desde la ROM y se prepara para procesarla.  
+
+    - **Bucle de Ejecución**: La CPU sigue un ciclo constante de lectura, decodificación y ejecución de instrucciones. Cada instrucción indica una operación específica, como mover datos entre la memoria y los registros, realizar cálculos o controlar dispositivos externos. Si la instrucción involucra la memoria, la CPU accede a la RAM para leer o escribir valores según lo requiera el programa.  
+
+    - **Detección de Entrada del Teclado**: El sistema está diseñado para detectar cuando una tecla está presionada. Las teclas están conectadas a la memoria y cada una tiene una dirección específica. Cuando el usuario presiona una tecla, el estado de la memoria cambia, y la CPU lo interpreta al leer la dirección correspondiente. Dependiendo del programa almacenado en la ROM, esta entrada se usa para modificar otras partes de la memoria y afectar la salida visual en la pantalla.
+
+    - **Modificación de la Pantalla**: La pantalla refleja los valores almacenados en la memoria RAM. Cuando la CPU detecta una tecla presionada, ejecuta instrucciones que cambian progresivamente los datos en la RAM, generando el efecto de oscurecimiento en la pantalla. Si la tecla se mantiene presionada, el programa sigue sobrescribiendo la memoria con valores que representan un color más oscuro, haciendo que la pantalla se vuelva completamente negra con el tiempo.
+
+ # Concepto de programa almacenado
+
+    1. **¿Qué es un programa y dónde se almacena?**
+
+        Un programa es un conjunto de instrucciones que la CPU ejecuta para realizar tareas específicas. Se almacena en la memoria ROM o RAM.
+
+    2. **Si pongo un comentario en un programa como: //variable tipo contador. ¿Dónde se almacena dicho comentario?**
+
+        os comentarios no se almacenan en la memoria del programa. Solo son útiles para los programadores y se eliminan durante el proceso de ensamblado.
+
+    3. **¿Dónde se almacena una variable?**
+
+        Las variables se almacenan en la memoria RAM durante la ejecución del programa.
+
+#  Fetch-Decode-Execute
+
+1. **Paso 1: Fetch (Búsqueda)**: En esta etapa, la CPU obtiene la siguiente instrucción que debe ejecutar. Aquí es donde entra en juego el Program Counter (PC), un registro especial de la CPU que almacena la dirección de memoria de la siguiente instrucción a ejecutar.
+
+2. **Paso 2: Decode (Decodificación)**: Una vez que la CPU tiene la instrucción en el Instruction Register (IR), debe interpretarla para saber qué operación realizar.
 
