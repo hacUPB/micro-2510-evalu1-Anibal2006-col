@@ -1,5 +1,5 @@
 # Investigacion   
-![Componentes](images/image.png)
+
 1. **CPU (Unidad Central de Procesamiento)**: Es el componente principal de un sistema informático encargado de interpretar y ejecutar instrucciones. Actúa como el "cerebro" del ordenador, gestionando y coordinando las operaciones de todos los demás componentes. La CPU consta de varias unidades funcionales, incluyendo la Unidad Aritmético-Lógica (ALU), la Unidad de Control y los registros internos.  
 
 2. **ALU (Unidad Aritmético-Lógica)**: Es una subunidad de la CPU responsable de realizar operaciones aritméticas (como suma, resta, multiplicación) y lógicas (como AND, OR, NOT). La ALU toma los datos de los registros, ejecuta las operaciones requeridas y devuelve los resultados para su almacenamiento o uso posterior.   
@@ -35,7 +35,7 @@
 
 
 # Ejercicio 2: simulación   
-![simulacion](images/simulacion.png)
+
  
  1. **Componentes principales y su función**
 
@@ -79,3 +79,26 @@
 
 2. **Paso 2: Decode (Decodificación)**: Una vez que la CPU tiene la instrucción en el Instruction Register (IR), debe interpretarla para saber qué operación realizar.
 
+# Tipos de Instrucciones del Procesador
+
+ El procesador del caso de estudio utiliza distintos tipos de instrucciones para ejecutar operaciones, las cuales pueden clasificarse en las siguientes categorías:
+
+ 1. **Instrucciones de Transferencia de Datos:**  
+    Estas instrucciones permiten mover datos entre registros, memoria y dispositivos de entrada/salida. Se utilizan para cargar valores en registros, almacenar datos en memoria o intercambiar información entre diferentes componentes.  
+    Ejemplo: MOV A, B (Copia el valor del registro B al registro A).
+
+2. **Instrucciones Aritméticas y Lógicas:**  
+    Son utilizadas para realizar operaciones matemáticas (suma, resta, multiplicación, división) y lógicas (AND, OR, NOT, XOR). Estas instrucciones modifican registros y afectan los indicadores de estado del procesador.  
+
+3. **Instrucciones de Control de Flujo:**  
+    Permiten modificar la secuencia de ejecución del programa mediante saltos condicionales e incondicionales, llamadas a subrutinas y retornos.  
+
+4. **Instrucciones de Entrada y Salida (I/O):**  
+    Estas instrucciones permiten la comunicación del procesador con dispositivos externos, como sensores, teclados o pantallas.   
+       
+
+# Decodificación en la CPU:
+El proceso de decodificación en la CPU consiste en interpretar una instrucción en lenguaje de máquina para determinar qué operación realizar. Primero, la CPU busca la instrucción en la memoria usando el Program Counter (PC). Luego, decodifica el tipo de instrucción (tipo A o tipo C) y extrae los campos de operación, destino y salto. Por ejemplo, una instrucción tipo A (bit más significativo en 0) almacena un valor en el Registro A, mientras que una tipo C (bits más significativos en 111) realiza operaciones como sumas o saltos. Además, la CPU gestiona registros, ejecuta operaciones aritméticas y lógicas, controla el flujo del programa y accede a la memoria y periféricos. Estas funcionalidades permiten ejecutar programas de manera eficiente.  
+
+# Codigo 
+El programa suma los números del 1 al 100 almacenando el resultado en sum. Utiliza un bucle que incrementa i y lo suma a sum hasta que i supera 100. Finalmente, el programa entra en un bucle infinito en la etiqueta END.
